@@ -1,0 +1,17 @@
+{% extends 'arrowjobs/base.html' %}
+
+{% block content %}
+
+<div class="holder">
+        <form method="POST" action="">
+          {% csrf_token %}
+          {{ form.as_p }}
+        <button type="submit">Submit</button>
+        </form>
+</div>
+
+{% endblock %}
+
+
+
+<!--  enctype="multipart/form-data" -->

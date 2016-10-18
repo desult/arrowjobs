@@ -1,0 +1,22 @@
+{% extends 'arrowjobs/base.html' %}
+
+{% block content %}
+
+<div class="holder">
+  <h2 align="center">{{ job_asp.design_id }}</h2>
+
+  <h3>{{ job_asp.description }}</h3>
+  <h4>{{ job_asp.contact.all|join:", " }}</h4>
+
+  <h4>{{ job_asp.date_in }}</h4>
+
+  {% if job_asp.get_design %}
+
+      <img class="center" src="{{ job_asp.get_design }}" width="400">
+
+  {% else %}
+      <br>
+  {% endif %}
+</div>
+
+{% endblock %}

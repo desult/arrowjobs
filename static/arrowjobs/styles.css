@@ -1,0 +1,44 @@
+body {       background: #eeeeee;
+             margin: 0px;
+             background-image: url("{% /images/redwall.jpg %}");}
+
+h1 {         margin: 0px;}
+
+img.center {     display: block;
+              margin-left: auto;
+              margin-right: auto;}
+
+
+.top {       background-color: hsla(190, 80%, 90%, 1);
+             text-align: center;
+             padding: 20px;}
+
+.holder {    width: 900px;
+             margin: 10px auto;
+             padding: 20px;
+             background-color: white;
+             box-shadow: 0px 5px 15px #888888;}
+
+.banner {    text-align: center;
+             background-color: #eeeeee;
+             padding: 10px;
+             margin: 10px;
+             border-radius: 10px;}
+
+.jobstable { background: white;
+             border: 1px solid red;
+             padding: 5px;
+             margin: 0px auto;
+             width: 100%;}
+
+.singlejob {  margin: 1px;}
+.asp {        width: 100px;}
+.cont {       width: 250px;}
+.desc {       width: 200px;}
+.datein {     width: 200px;}
+
+.bggrey {background: #eeeeee;}
+.bglbue {background-color: hsla(190, 80%, 90%, 1);}
+.pd5 { padding: 5px;}
+.clearboth {clear: both;}
+.fl {float: left;}

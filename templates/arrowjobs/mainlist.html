@@ -1,0 +1,28 @@
+{% extends 'arrowjobs/base.html' %}
+
+{% block content %}
+
+<div class="holder">
+  <div class="jobstable">
+    <div class="singlejob">
+      <div class="fl bglbue pd5 asp">ASP</a></div>
+      <div class="fl bglbue pd5 cont">Contact</div>
+      <div class="fl bglbue pd5 desc">Description</div>
+      <div class="fl bglbue pd5 datein">Date In</div>
+      <div class="clearboth"></div>
+    </div>
+
+  {% for job in all_jobs %}
+    <div class="singlejob">
+      <div class="fl bggrey pd5 asp"><a href="{{ job.get_absolute_url }}">{{ job.design_id }}</a></div>
+      <div class="fl bggrey pd5 cont">{{ job.contact.all|join:", " }}</div>
+      <div class="fl bggrey pd5 desc">{{ job.description }}</div>
+      <div class="fl bggrey pd5 datein">{{ job.date_in|date:"m-d-Y" }}</div>
+      <div class="clearboth"></div>
+    </div>
+  {% endfor %}
+
+  </div>
+</div>
+
+{% endblock %}
